@@ -24,20 +24,20 @@ spring:
       ddl-auto: none
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-  properties:
-    hibernate:
-      default_batch_fetch_size: 100 #Fetch Join
-      format_sql: 'true'
-      use_sql_comments: 'true'
-  show-sql: 'true'
-  open-in-view: 'false'
-datasource:
-  driver-class-name: org.mariadb.jdbc.Driver
-  password: 1234
-  username: poly
-  url: jdbc:mariadb://192.168.31.128:3306/myDB
-application:
-  name: USER-SERVICE
+    properties:
+      hibernate:
+        default_batch_fetch_size: 100 #Fetch Join
+        format_sql: 'true'
+        use_sql_comments: 'true'
+    show-sql: 'true'
+    open-in-view: 'false'
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    password: 1234
+    username: poly
+    url: jdbc:mariadb://192.168.31.128:3306/myDB
+  application:
+    name: USER-SERVICE
 
 jwt:
   token:
