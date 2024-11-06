@@ -56,4 +56,4 @@ eureka:
 server:
   port: '12000'
 api:
-  gateway: localhost:11000
+  gateway: localhost:13000
